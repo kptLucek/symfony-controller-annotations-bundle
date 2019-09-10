@@ -1,0 +1,30 @@
+{
+    "name": "kptLucek/symfony-controller-annotations-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony Controller Annotation reader component that gives you ability to create & read your own created (controller-method related) annotations for easier usage.",
+    "keywords": [],
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Marcin Bonk",
+            "email": "marvcin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "symfony/framework-bundle": "^4.1",
+        "symfony/dependency-injection": "^4.1",
+        "symfony/event-dispatcher": "^4.1",
+        "doctrine/annotations": "1.6.*",
+        "jms/metadata":">=1.7 <2.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "KptLucek\\ControllerAnnotationReaderBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
