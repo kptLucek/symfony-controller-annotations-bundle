@@ -1,13 +1,13 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle\Event;
+namespace Lucek\ControllerAnnotationReaderBundle\Event;
 
 use Metadata\MethodMetadata;
 use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class MethodAnnotationEvent
- * @package KptLucek\FormHandlerBundle\Event
+ * @package Lucek\FormHandlerBundle\Event
  */
 class AnnotationEvent extends Event
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle;
+namespace Lucek\ControllerAnnotationReaderBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class ControllerAnnotationReaderBundle
- * @package KptLucek\ControllerAnnotationReaderBundle
+ * @package Lucek\ControllerAnnotationReaderBundle
  */
 class ControllerAnnotationReaderBundle extends Bundle
 {

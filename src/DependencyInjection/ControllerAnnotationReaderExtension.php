@@ -1,6 +1,6 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle\DependencyInjection;
+namespace Lucek\ControllerAnnotationReaderBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader;
 
 /**
  * Class ControllerAnnotationReaderExtension
- * @package KptLucek\ControllerAnnotationReaderBundle\DependencyInjection
+ * @package Lucek\ControllerAnnotationReaderBundle\DependencyInjection
  */
 class ControllerAnnotationReaderExtension extends Extension
 {

@@ -6,7 +6,7 @@
         https://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="kpt_lucek.controller_annotation_reader.event_subscriver.kernel_controller_event_subscriber" class="KptLucek\ControllerAnnotationReaderBundle\Event\Subscriber\KernelControllerEventSubscriber" autowire="false">
+        <service id="kpt_lucek.controller_annotation_reader.event_subscriver.kernel_controller_event_subscriber" class="Lucek\ControllerAnnotationReaderBundle\Event\Subscriber\KernelControllerEventSubscriber" autowire="false">
             <argument type="service" id="@annotations.reader"/>
             <argument type="service" id="@event_dispatcher"/>
             <tag name="kernel.event_subscriber"/>

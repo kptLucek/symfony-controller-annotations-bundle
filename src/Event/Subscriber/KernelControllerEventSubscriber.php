@@ -1,11 +1,11 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle\Event\Subscriber;
+namespace Lucek\ControllerAnnotationReaderBundle\Event\Subscriber;
 
 use Doctrine\Common\Annotations\Reader;
 use Metadata\MethodMetadata;
-use KptLucek\ControllerAnnotationReaderBundle\Event\AnnotationEvent;
-use KptLucek\ControllerAnnotationReaderBundle\Event\PostAnnotationEvent;
+use Lucek\ControllerAnnotationReaderBundle\Event\AnnotationEvent;
+use Lucek\ControllerAnnotationReaderBundle\Event\PostAnnotationEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
 /**
  * Class KernelControllerEventSubscriber
- * @package KptLucek\ControllerAnnotationReaderBundle\Event\Subscriber
+ * @package Lucek\ControllerAnnotationReaderBundle\Event\Subscriber
  */
 class KernelControllerEventSubscriber implements EventSubscriberInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle\Event;
+namespace Lucek\ControllerAnnotationReaderBundle\Event;
 
 use Metadata\MethodMetadata;
 use Symfony\Component\EventDispatcher\Event;
@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class PostAnnotationEvent
- * @package KptLucek\ControllerAnnotationReaderBundle\Event
+ * @package Lucek\ControllerAnnotationReaderBundle\Event
  */
 class PostAnnotationEvent extends Event
 {

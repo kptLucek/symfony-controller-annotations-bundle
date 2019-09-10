@@ -1,13 +1,13 @@
 <?php
 
-namespace KptLucek\ControllerAnnotationReaderBundle\DependencyInjection;
+namespace Lucek\ControllerAnnotationReaderBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
  * Class Configuration
- * @package KptLucek\ControllerAnnotationReaderBundle\DependencyInjection
+ * @package Lucek\ControllerAnnotationReaderBundle\DependencyInjection
  */
 class Configuration implements ConfigurationInterface
 {
