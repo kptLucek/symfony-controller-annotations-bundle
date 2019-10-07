@@ -4,7 +4,7 @@
     "description": "Symfony Controller Annotation reader component that gives you ability to create & read your own created (controller-method related) annotations for easier usage.",
     "keywords": [],
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Marcin Bonk",
