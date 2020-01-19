@@ -9,6 +9,7 @@ use Lucek\ControllerAnnotationReaderBundle\Event\PostAnnotationEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
 /**
@@ -48,11 +49,11 @@ class KernelControllerEventSubscriber implements EventSubscriberInterface
     }
 
     /**
-     * @param FilterControllerEvent $event
+     * @param ControllerEvent $event
      *
      * @throws \ReflectionException
      */
-    public function onKernelController(FilterControllerEvent $event): void
+    public function onKernelController(ControllerEvent $event): void
     {
         if (false === $event->isMasterRequest()) {
             return;
@@ -88,9 +89,9 @@ class KernelControllerEventSubscriber implements EventSubscriberInterface
         $metadata = new MethodMetadata($reflectionMethod->class, $reflectionMethod->name);
 
         foreach ($annotations as $annotation) {
-            $this->eventDispatcher->dispatch(AnnotationEvent::ANNOTATION_METHOD, new AnnotationEvent($annotation, $metadata));
+            $this->eventDispatcher->dispatch(new AnnotationEvent($annotation, $metadata), AnnotationEvent::ANNOTATION_METHOD);
         }
 
-        $this->eventDispatcher->dispatch(PostAnnotationEvent::POST_ANNOTATION, new PostAnnotationEvent($metadata, $request));
+        $this->eventDispatcher->dispatch(new PostAnnotationEvent($metadata, $request), PostAnnotationEvent::POST_ANNOTATION);
     }
 }
