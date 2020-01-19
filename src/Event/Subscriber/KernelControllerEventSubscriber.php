@@ -44,7 +44,7 @@ class KernelControllerEventSubscriber implements EventSubscriberInterface
      */
     public static function getSubscribedEvents(): array
     {
-        return ['kernel.controller' => 'onKernelController'];
+        return ['kernel.controller' => ['onKernelController', -1]];
     }
 
     /**
